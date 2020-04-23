@@ -63,6 +63,8 @@ class LSBaseLineView2: UIView {
         context?.addLine(to: CGPoint(x: 100, y: 0))
         context?.strokePath()
         
+        context?.setFillColor(UIColor.red.cgColor)
+        context?.fillPath()
     }
 }
 
@@ -80,6 +82,33 @@ class LSBaseLineView3: UIView {
         context?.addRect(rectangle)
         context?.strokePath()
         
+        context?.setFillColor(UIColor.red.cgColor)
+        context?.fill(rectangle)
+        
     }
 }
+
+class LSBaseLineView4: UIView {
+    
+    override func draw(_ rect: CGRect) {
+    
+        UIColor.white.setFill()
+        UIRectFill(rect)
+        
+        let context = UIGraphicsGetCurrentContext()
+        
+        context?.move(to: CGPoint(x:100, y: 0))
+        context?.addLine(to: CGPoint(x: 150, y: 50))
+        context?.addLine(to: CGPoint(x: 100, y: 100))
+        context?.addLine(to: CGPoint(x: 50, y: 50))
+        context?.addLine(to: CGPoint(x: 100, y: 0))
+        
+        context?.fillPath()
+    }
+    
+}
+    
+
+
+
 

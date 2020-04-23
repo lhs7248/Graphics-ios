@@ -19,7 +19,10 @@ private struct ItemDef {
 
 class LSTableViewController: UITableViewController{
     
-    private var dataSource:[ItemDef] = [ItemDef(title: "Graphics-line", subtitle: "关于线的绘制", class: LSBaseLineViewController.self)]
+    private var dataSource:[ItemDef] = [ItemDef(title: "Graphics-line", subtitle: "关于线的绘制", class: LSBaseLineViewController.self),
+                                        ItemDef(title: "Graphics-cirlcle", subtitle: "关于圆及椭圆的绘制", class: LSBaseCirlcelViewController.self),
+                                        ItemDef(title: "Graphics-Gradients", subtitle: "关于渐变色", class: LSBaseGradientsViewController.self)
+                                       ]
     
     override func viewDidLoad() {
         super.viewDidLoad()

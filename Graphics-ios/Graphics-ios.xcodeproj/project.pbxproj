@@ -17,6 +17,8 @@
 		176991292451741F00006571 /* Graphics_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176991282451741F00006571 /* Graphics_iosUITests.swift */; };
 		176991372451785300006571 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176991362451785300006571 /* TableViewController.swift */; };
 		1769913924517C5900006571 /* LSBaseLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1769913824517C5900006571 /* LSBaseLineViewController.swift */; };
+		1769913B2451896200006571 /* LSBaseCirlcelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1769913A2451896200006571 /* LSBaseCirlcelViewController.swift */; };
+		1769913D24518DAB00006571 /* LSBaseGradientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1769913C24518DAB00006571 /* LSBaseGradientsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		1769912A2451741F00006571 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		176991362451785300006571 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		1769913824517C5900006571 /* LSBaseLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSBaseLineViewController.swift; sourceTree = "<group>"; };
+		1769913A2451896200006571 /* LSBaseCirlcelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSBaseCirlcelViewController.swift; sourceTree = "<group>"; };
+		1769913C24518DAB00006571 /* LSBaseGradientsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LSBaseGradientsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +112,8 @@
 				1769910A2451741D00006571 /* ViewController.swift */,
 				176991362451785300006571 /* TableViewController.swift */,
 				1769913824517C5900006571 /* LSBaseLineViewController.swift */,
+				1769913A2451896200006571 /* LSBaseCirlcelViewController.swift */,
+				1769913C24518DAB00006571 /* LSBaseGradientsViewController.swift */,
 				1769910C2451741D00006571 /* Main.storyboard */,
 				1769910F2451741F00006571 /* Assets.xcassets */,
 				176991112451741F00006571 /* LaunchScreen.storyboard */,
@@ -269,7 +275,9 @@
 				1769910B2451741D00006571 /* ViewController.swift in Sources */,
 				176991072451741D00006571 /* AppDelegate.swift in Sources */,
 				176991092451741D00006571 /* SceneDelegate.swift in Sources */,
+				1769913D24518DAB00006571 /* LSBaseGradientsViewController.swift in Sources */,
 				176991372451785300006571 /* TableViewController.swift in Sources */,
+				1769913B2451896200006571 /* LSBaseCirlcelViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
