@@ -17,11 +17,14 @@ class LSBaseGradientsViewController: UIViewController {
         self.title  = "关于渐变色绘制"
         
         
-        let lineView1 = LSBaseGradientsView1(frame: CGRect(x: 0, y: 88, width: UIScreen.main.bounds.size.width, height: 400))
+        let lineView1 = LSBaseGradientsView1(frame: CGRect(x: 0, y: 88, width: UIScreen.main.bounds.size.width, height: 200))
         self.view .addSubview(lineView1)
         
-        let lineView2 = LSBaseGradientsView2(frame: CGRect(x: 0, y: 488, width: UIScreen.main.bounds.size.width, height: 300))
+        let lineView2 = LSBaseGradientsView2(frame: CGRect(x: 0, y: 288, width: UIScreen.main.bounds.size.width, height: 300))
         self.view .addSubview(lineView2)
+        
+        let lineView3 = LSBaseGradientsView3(frame: CGRect(x: 0, y: 588, width: UIScreen.main.bounds.size.width, height: 300))
+        self.view .addSubview(lineView3)
     
     }
 }
@@ -66,7 +69,7 @@ class LSBaseGradientsView2: UIView {
         UIRectFill(rect)
         
         let context = UIGraphicsGetCurrentContext()
-        
+
 
         let locations: [CGFloat] = [0.0, 0.5, 1.0]
 
@@ -92,5 +95,36 @@ class LSBaseGradientsView2: UIView {
         context?.drawRadialGradient(gradient!, startCenter: startPoint,
                               startRadius: startRadius, endCenter: endPoint,
                      endRadius: endRadius, options: [])
+    }
+}
+class LSBaseGradientsView3: UIView {
+    override func draw(_ rect: CGRect) {
+        
+        UIColor.white.setFill()
+        UIRectFill(rect)
+        let context = UIGraphicsGetCurrentContext()
+           let locations: [CGFloat] = [0.0, 1.0]
+
+           let colors = [UIColor.white.cgColor,
+                             UIColor.blue.cgColor]
+
+           let colorspace = CGColorSpaceCreateDeviceRGB()
+
+           let gradient = CGGradient(colorsSpace: colorspace,
+                           colors: colors as CFArray, locations: locations)
+
+           var startPoint = CGPoint()
+           var endPoint = CGPoint()
+           startPoint.x = 180
+           startPoint.y = 80
+           endPoint.x = 200
+           endPoint.y = 100
+           let startRadius: CGFloat = 0
+           let endRadius: CGFloat = 75
+
+           context?.drawRadialGradient (gradient!, startCenter: startPoint,
+                                startRadius: startRadius, endCenter: endPoint,
+                     endRadius: endRadius,
+                                options: .drawsBeforeStartLocation)
     }
 }
